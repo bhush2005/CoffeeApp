@@ -8,7 +8,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavController
 import com.example.mycoffeeapp.R
 import com.example.mycoffeeapp.domain.modal.Product
-import kotlinx.serialization.Serializable
 
 @Composable
 fun DetailScreen(productId : Int, navController: NavController){

@@ -1,6 +1,6 @@
 package com.example.mycoffeeapp.presentation.Screens.detailscreen
 
-import android.R
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -40,7 +40,7 @@ Box(
       text = sizeText,
       fontSize = 16.sp,
       fontWeight = FontWeight.SemiBold,
-          color = if (selected) LightBrown else CharcoalGray
+      color = if (selected) LightBrown else CharcoalGray
       )
      }
 
