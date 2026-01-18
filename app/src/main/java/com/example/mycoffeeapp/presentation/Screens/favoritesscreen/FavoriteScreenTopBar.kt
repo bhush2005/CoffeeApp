@@ -1,4 +1,4 @@
-package com.example.mycoffeeapp.presentation.Screens.cartScreen
+package com.example.mycoffeeapp.presentation.Screens.favoritesscreen
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -19,10 +19,10 @@ import com.example.mycoffeeapp.presentation.navigation.Routes
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CartScreenTopAppBar() {
+fun FavoriteScreenTopAppBar() {
 
     TopAppBar(
-        title = { Text("Order",
+        title = { Text("Favorites",
             modifier = Modifier.fillMaxWidth(),
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold

@@ -59,7 +59,7 @@ fun CartScreen(navController: NavController) {
 
 
     Scaffold(
-        topBar = { CartScreenTopAppBar(navController) },
+        topBar = { CartScreenTopAppBar() },
         bottomBar = { MyBottomNavBar(navController = navController, "Cart") }
     ) { innerPadding ->
         LazyColumn(

@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.mycoffeeapp.presentation.Screens.cartScreen.CartScreen
+import com.example.mycoffeeapp.presentation.Screens.favoritesscreen.FavoritesScreen
 import com.example.mycoffeeapp.presentation.navigation.NavGraph
 import com.example.mycoffeeapp.presentation.theme.MyCoffeeAppTheme
 
