@@ -26,12 +26,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.mycoffeeapp.R
 import com.example.mycoffeeapp.domain.modal.Product
+import com.example.mycoffeeapp.presentation.theme.CharcoalGray
 import com.example.mycoffeeapp.presentation.theme.IvoryWhite
 import com.example.mycoffeeapp.presentation.theme.LightGray
 
@@ -52,7 +54,7 @@ fun ProductDetailsContent(product: Product, innerPadding: PaddingValues) {
             contentScale = ContentScale.Crop
         )
 
-        Spacer(modifier = Modifier.height(12.dp))
+        Spacer(modifier = Modifier.height(30.dp))
 
         Text(
             text = product.name,
@@ -61,13 +63,17 @@ fun ProductDetailsContent(product: Product, innerPadding: PaddingValues) {
             color = Color.Black
         )
 
-        Spacer(modifier = Modifier.height(12.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
-        Row {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             Text(
                 text = "Ice / Hot",
                 fontSize = 16.sp,
-                color = LightGray,
+                color = Color.Gray,
                 fontWeight = FontWeight.Medium
             )
 
@@ -84,14 +90,14 @@ fun ProductDetailsContent(product: Product, innerPadding: PaddingValues) {
             )
         }
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(24.dp))
 
         HorizontalDivider(
             color = Color.LightGray.copy(alpha = 0.5f),
             thickness = 1.dp
         )
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(24.dp))
 
 
         Text(
@@ -101,14 +107,16 @@ fun ProductDetailsContent(product: Product, innerPadding: PaddingValues) {
             color = Color.Black
         )
 
+        Spacer(modifier = Modifier.height(12.dp))
+
         Text(
             text = product.description,
             fontSize = 16.sp,
-            color = LightGray,
+            color = Color.Gray,
             fontWeight = FontWeight.Medium
         )
 
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(40.dp))
 
         Text(
             text = "Size",
